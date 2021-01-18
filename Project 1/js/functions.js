@@ -7,7 +7,7 @@ function calculateTotal(price, quantity) {
 
 function outputCartRow(file, title, quantity, price, total) {
     document.write('<tr>' +
-                        '<td><img src="' + file + '"></td>' +
+                        '<td><img src="images/' + file + '"></td>' +
                         '<td>' + title + '</td>' +
                         '<td>' + quantity + '</td>' +
                         '<td>$' + price.toFixed(2) + '</td>' +
