@@ -10,7 +10,7 @@ function outputCartRow(file, title, quantity, price, total) {
                         '<td><img src="' + file + '"></td>' +
                         '<td>' + title + '</td>' +
                         '<td>' + quantity + '</td>' +
-                        '<td>' + price + '</td>' +
-                        '<td>' + total + '</td>' +
+                        '<td>$' + price.toFixed(2) + '</td>' +
+                        '<td>$' + total.toFixed(2) + '</td>' +
                     '</tr>')
 }
