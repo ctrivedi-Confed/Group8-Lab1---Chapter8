@@ -11,7 +11,8 @@ if (subTotal < 1000) {
    shipping = 40;
 }
 var grandTotal = subTotal + taxes + shipping;
-window.onload = function() {
+// This function will be called only when the page is fully loaded
+function refreshValues() {
    document.getElementById("subtotal").innerHTML = subTotal.toFixed(2).toString();
    document.getElementById("taxes").innerHTML = taxes.toFixed(2).toString();
    document.getElementById("shipping").innerHTML = shipping.toFixed(2).toString();
